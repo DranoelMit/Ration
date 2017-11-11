@@ -3,9 +3,58 @@
 <head>
   <title>Ration</title>
   <style>
-body {
-    background-color: #FF7F50;
+
+  input[type=text] {
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 30px 20px 12px 40px;
 }
+
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family:"Monaco";
+}
+h4{
+  text-align: center;
+   color: #008000;
+    font-weight: 2000;
+    font-family: "Impact";
+    letter-spacing:3px;
+}
+form{text-align: center;
+   color: #ffffff;
+    font-weight: 2000;
+    font-family: "Impact";
+    letter-spacing:3px;}
+body {
+    background-color: #EF855B;
+}
+div {
+    margin: auto;
+    padding: 8px;
+}
+li{
+    font-family: "Impact";
+    letter-spacing: 2px;
+
+}
+
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -37,6 +86,7 @@ li a {
 
 a:hover:not(.active) {
     background-color: #778899;
+    opacity: 0.5;
 }
 
 .active {
@@ -49,23 +99,43 @@ background-color:#778899;
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <link rel="stylesheet" type="text/css" href="style1.css">
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">About Us</a></li>
+<ul >
+  <li><a class="active"  href="#home">Home</a></li>
+  <li><a href="#news" >About Us</a></li>
   <li><a href="#contact">Contact</a></li>
 </ul>
 
  <div  class="container-fluid">
-   <img align="middle;"
-   <img src="Ration.png" class="img-center" width=750 height=500 />
-     <h1 class="text-center ">How Much Do You Want to Spend?</h1>
+ <p class="small">
+    <img src="Ration.png" alt="american" class="text-center col-sm-8" alt="Cinque Terre" width=50% height="500">
+   <div>
+     <h2 class="text-center " style="font-size: 40pt;">How Much Do You Want to Spend?</h2>
+</div>
+</p>
+
 </div>
 
-<center><form action="/action_page.php">
-  <div style="font-size: 50pt;" style="font-color: #00ff00;"/>
-    $ <input type="text" style="font-size: 50pt; width:200px; ">
-</form>
+
+<center>
+<h4 action="http://gotechnica.org/">
+  <div style="font-size: 50pt; font-family:"Monaco">
+    $ <input id="#money" type="text" name="$$$" style="font-size: 50pt; width:200px; ">
+    <br>
+  <input id="#money" type="submit" value="Submit">
+</h4>
 </center>
+
+
+
+<h1>Contact Us:</h1>
+
+<form>
+  <label for="fname">Email</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Message</label>
+  <input type="text" id="lname" name="lname">
+</form>
+
 
 </body>
 </html>
