@@ -1,6 +1,6 @@
-displayValues(values)
+function displayValues(name, location, hours)
 {
-  document.getElementById('nameDB').innerHTML = ans[0];
-  document.getElementById('locationDB').innerHTML = ans[0];
-  document.getElementById('hoursDB').innerHTML = ans[0];
+  document.getElementById('nameDB').innerHTML = name;
+  document.getElementById('locationDB').innerHTML = location;
+  document.getElementById('hoursDB').innerHTML = hours;
 }
