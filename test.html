@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="cost2Range.js"></script>
+  <script src="dispHelper.js"></script>
   <style>
   body {
       position: relative; 
@@ -26,12 +28,17 @@ color: white;
 
 .centered{
   position:absolute;
-  top: 3%;
+  top: 1%;
   left: 50%;
+
   transform: translate(-50%,50%);
   color: white;
   font-family: "Impact";
 
+}
+#money
+{
+  color: black;
 }
 .container2 {
 position: relative;
@@ -40,7 +47,7 @@ color: white;
 
 .centered2{
   position:absolute;
-  top: 11%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%,50%);
   color: white;
@@ -119,6 +126,38 @@ color: white;
       color:white;
 
   }
+  
+  #nameDB{
+  position:absolute;
+  bottom:60%;
+  left: 20%;
+  transform: translate(-50%,50%);
+  color: white;
+  font-family: "Monaco";
+
+  }
+  #locationDB
+  {
+    position:absolute;
+  padding-left:50%;
+  padding-right: 50%;
+  bottom:20%;
+  left: 40%;
+  transform: translate(-50%,50%);
+  color: white;
+  font-family: "Monaco";
+    
+  }
+  #hoursDB
+  {
+    position:absolute;
+  
+  left: 20%;
+  transform: translate(-50%,50%);
+  color: white;
+  font-family: "Monaco";
+    
+  }
 
 
   </style>
@@ -161,11 +200,15 @@ makes everything one line-->
     <center class="container3-fluid">
     <h4 class="centered3" action="http://gotechnica.org/">
     <div style="font-size: 50pt; font-family:"Monaco">
-    $ <input id="#money" type="text" name="$$$" style="font-size: 50pt; width:200px; ">
+    <span id="moneysign">$</span> <input id="money" type="text" onkeypress="sendCost(money.value,event,this)" name="$$$" style="font-size: 50pt; width:200px; ">
     <br>
+<h1 id = "nameDB" style="font-size:40pt"></h1>
+<h2 id = "locationDB" style="font-size:40pt" ></h2>
+<h3 id = "hoursDB" style="font-size:40pt" ></h3>
 </h4>
+
 </center>
-    </div>
+</div>
 
    <div class="Jumbotron">
     <img src="hobokenPan.jpg" alt="trees" style="width: 100%" height="900">
