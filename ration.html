@@ -2,7 +2,14 @@
 <html lang="en">
 <head>
   <title>Ration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
+  #section1 {padding-top:50px;height:900px;color:;}
+  #section2 {padding-top:50px;height:900px;color: #fff; background-color: #67597A;}
+  #section3 
+  #section3 
+
 
   input[type=text] {
     width: 30%;
@@ -17,14 +24,55 @@
     background-repeat: no-repeat;
     padding: 30px 20px 12px 40px;
 }
+.container {
+position: relative;
+text-align: center;
+color: white;
+}
+
+.centered{
+  position:absolute;
+  padding-bottom: 90%;
+  padding-top: 90%
+  transform: translate(-50%,50%);
+}
+
+.container2 {
+position: relative;
+text-align: center;
+color: white;
+}
+
+.centered2{
+  position:absolute;
+  padding-bottom: 70%;
+  padding-top: 17%;
+  padding-left:  10%;
+  
+}
+
+.container3 {
+position: relative;
+text-align: center;
+color: white;
+}
+
+.centered3{
+  position:absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  }
 
 img {
     display: block;
-    margin: auto;
-    width: 50%;
+    padding-bottom: 20%; 
+    padding-top: 0%;
+    height: 800;
+
 }
 input[type=text] {
-    width: 100%;
+    width: 8%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -36,15 +84,14 @@ h4{
     font-weight: 2000;
     font-family: "Impact";
     letter-spacing:3px;
+    padding-bottom: 50%; 
 }
 form{text-align: center;
    color: #ffffff;
     font-weight: 2000;
     font-family: "Impact";
     letter-spacing:3px;}
-body {
-    background-color: #EF855B;
-}
+
 div {
     margin: auto;
     padding: 8px;
@@ -58,17 +105,21 @@ li{
 h1 {
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff ;
+    text-shadow: 10px 10px #000000; 
+    color: #FF7F50 ;
     font-weight: 2000;
     font-family: "Impact";
     letter-spacing:3px;
+    padding: 8px;
+
 
 }
 
 h2 {
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff ;
+    color: #FF7F50  ;
+    text-shadow: 3px 3px #000000;
     font-weight: 2000;
     font-family: "Monaco";
     letter-spacing:3px;
@@ -117,33 +168,32 @@ background-color:#778899;
 
   <link rel="stylesheet" type="text/css" href="style1.css">
 <ul >
-  <li><a class="active"  href="#home">Home</a></li>
-  <li><a href="#news" >About Us</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="#section4">Contact</a></li>
+  <li><a href="#section3" >About Us</a></li>
+  <li><a href="#section2">Order</a></li>
+  <li><a class="active"  href="#section1">Home</a></li>
+
+
+
 </ul>
 
- <div  class="container-fluid">
- <p class="small">
-    <img src="Ration.png" alt="american" class="text-center col-sm-8" alt="Cinque Terre" width=50% height="500">
-   <div>
-     <h2 class="text-center " style="font-size: 40pt;">How Much Do You Want to Spend?</h2>
-</div>
-</p>
-
-</div>
-
-
-<center>
-<h4 action="http://gotechnica.org/">
-  <div style="font-size: 50pt; font-family:"Monaco">
+<div class="w3-container w3-center w3-animate-bottom">
+    <h1 class="centered" style="font-size: 100pt;">Ration</h1>
+    <h2 class="centered2 " style="font-size: 40pt;">How Much Do You Want to Spend?</h2>
+    <center class="container3-fluid">
+    <h4 class="centered3" action="http://gotechnica.org/">
+    <div style="font-size: 50pt; font-family:"Monaco">
     $ <input id="#money" type="text" name="$$$" style="font-size: 50pt; width:200px; ">
     <br>
 </h4>
 </center>
+    </div>
+<div class="center-fluid">
+    <img src="home3.jpg" alt="trees" style="width: 100%" height="900">
+</div>
 
 
-
-<h1>Contact Us:</h1>
+<h3>Contact Us:</h3>
 
 <form>
   <label for="fname">Email</label>
